@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Admin Dashboard</title>
+        <link rel="stylesheet" href="style.css" />
+        </head>
+        <body>
+          <div class="container">
+              <aside class="sidebar">
+                    <h2>Dashboard</h2>
+                          <ul>
+                                  <li onclick="showContent('overview')">Overview</li>
+                                          <li onclick="showContent('analytics')">Analytics</li>
+                                                  <li onclick="showContent('users')">Users</li>
+                                                          <li onclick="showContent('settings')">Settings</li>
+                                                                </ul>
+                                                                      <button onclick="toggleDarkMode()" class="toggle-btn">Toggle Dark Mode</button>
+                                                                          </aside>
+
+                                                                              <main class="main-content">
+                                                                                    <header>
+                                                                                            <h1 id="page-title">Overview</h1>
+                                                                                                  </header>
+                                                                                                        <section id="content">
+                                                                                                                <div class="card">Welcome to the admin dashboard!</div>
+                                                                                                                      </section>
+                                                                                                                          </main>
+                                                                                                                            </div>
+
+                                                                                                                              <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                                                                                                                <script src="script.js"></script>
+                                                                                                                                </body>
+                                                                                                                                </html>

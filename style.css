@@ -1,0 +1,109 @@
+:root {
+      --bg: #f5f7fa;
+        --text: #111;
+          --card-bg: #fff;
+            --sidebar-bg: #1e1e2f;
+              --primary: #00adb5;
+              }
+
+              body.dark {
+                --bg: #121212;
+                  --text: #fff;
+                    --card-bg: #1f1f2e;
+                    }
+
+                    * {
+                      margin: 0;
+                        padding: 0;
+                          box-sizing: border-box;
+                            font-family: 'Segoe UI', sans-serif;
+                            }
+
+                            body {
+                              background: var(--bg);
+                                color: var(--text);
+                                }
+
+                                .container {
+                                  display: flex;
+                                    min-height: 100vh;
+                                    }
+
+                                    .sidebar {
+                                      width: 220px;
+                                        background-color: var(--sidebar-bg);
+                                          color: white;
+                                            padding: 20px;
+                                            }
+
+                                            .sidebar h2 {
+                                              color: var(--primary);
+                                                text-align: center;
+                                                  margin-bottom: 30px;
+                                                  }
+
+                                                  .sidebar ul {
+                                                    list-style: none;
+                                                    }
+
+                                                    .sidebar li {
+                                                      padding: 15px;
+                                                        cursor: pointer;
+                                                          transition: background 0.3s;
+                                                          }
+
+                                                          .sidebar li:hover {
+                                                            background-color: rgba(255,255,255,0.1);
+                                                            }
+
+                                                            .toggle-btn {
+                                                              margin-top: 20px;
+                                                                width: 100%;
+                                                                  padding: 10px;
+                                                                    background-color: var(--primary);
+                                                                      color: white;
+                                                                        border: none;
+                                                                          border-radius: 6px;
+                                                                            cursor: pointer;
+                                                                            }
+
+                                                                            .main-content {
+                                                                              flex: 1;
+                                                                                padding: 20px;
+                                                                                }
+
+                                                                                header h1 {
+                                                                                  font-size: 24px;
+                                                                                    margin-bottom: 20px;
+                                                                                    }
+
+                                                                                    .card {
+                                                                                      background-color: var(--card-bg);
+                                                                                        padding: 20px;
+                                                                                          border-radius: 12px;
+                                                                                            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                                                                                              margin-bottom: 20px;
+                                                                                              }
+
+                                                                                              canvas {
+                                                                                                max-width: 100%;
+                                                                                                }
+
+                                                                                                /* Responsive */
+                                                                                                @media (max-width: 768px) {
+                                                                                                  .container {
+                                                                                                      flex-direction: column;
+                                                                                                        }
+
+                                                                                                          .sidebar {
+                                                                                                              width: 100%;
+                                                                                                                  display: flex;
+                                                                                                                      flex-wrap: wrap;
+                                                                                                                          justify-content: space-around;
+                                                                                                                            }
+
+                                                                                                                              .main-content {
+                                                                                                                                  padding: 10px;
+                                                                                                                                    }
+                                                                                                                                    }
+}
